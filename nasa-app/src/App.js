@@ -8,7 +8,7 @@ import About from './Pages/About';
 
 export default function Main() {
     return (
-      <div className="App">
+      <div className="App font-sans bg-neutral-900 text-slate-300 h-screen flex flex-col ">
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/Events" element={ <Events/> } />
