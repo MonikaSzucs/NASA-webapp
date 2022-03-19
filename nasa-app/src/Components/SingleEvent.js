@@ -23,7 +23,7 @@ export default function SingleEvent() {
       };
 
     return (
-        <div className="container md:flex items-center justify-center mx-auto w-4/5 align-middle flex-grow md:h-full ">
+        <div className="container md:flex items-center justify-center mx-auto md:w-4/5 align-middle flex-grow md:h-full ">
             <div className="flex-none"></div>
             <div className="md:col-span-2 md:flex-1 p-3">
                 {userData.title ? <img src={userData.url}/> : null}
@@ -38,7 +38,7 @@ export default function SingleEvent() {
                 </div>
             </div>
             <div className="flex-none"></div>
-    </div>
+        </div>
     );
 }
 // SingleEvent
