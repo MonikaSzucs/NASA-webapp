@@ -23,12 +23,15 @@ export default function Events() {
         getGiHubUserWithAxios();
     },[])
     return (
+        <>
+        
         <div className="App h-screen flex flex-col bg-scroll ">
             
             <div className="flex-none"></div>
             <Navbar/>
             <div className="container md:flex mx-auto md:w-4/5">Events</div>
             <div className="overflow-y-auto h-25 scrollbar-thin scrollbar-thumb-red-700 scrollbar-track-red-300">
+                
             {
                 eventsData.events?.map((event, indexKey) => {
                     return (
@@ -72,6 +75,7 @@ export default function Events() {
             </div>
             <div className="flex-none"></div>
         </div>
+        </>
     );
 }
 // Events
